@@ -13,47 +13,49 @@ $('#submitButton').click(function () {
     var fQuizzes = parseFloat($('#Quizzes').val());
     var fExams = parseFloat($('#Exams').val());
     var fIntex = parseFloat($('#Intex').val());
+    if ((fAssignments <= 50.0) && (fGroupProject <= 10.0) && (fQuizzes <= 10.0) && (fExams <= 20.0) && (fIntex <= 10.0)) {
+        //calculate grade based on inputs
+        fGradePercentage = fAssignments + fGroupProject + fQuizzes + fExams + fIntex;
+        if (fGradePercentage >= 94) {
+            sGradeLetter = 'A';
+        }
+        else if (fGradePercentage >= 90) {
+            sGradeLetter = 'A-';
+        }
+        else if (fGradePercentage >= 87) {
+            sGradeLetter = 'B+';
+        }
+        else if (fGradePercentage >= 84) {
+            sGradeLetter = 'B';
+        }
+        else if (fGradePercentage >= 80) {
+            sGradeLetter = 'B-';
+        }
+        else if (fGradePercentage >= 77) {
+            sGradeLetter = 'C+';
+        }
+        else if (fGradePercentage >= 74) {
+            sGradeLetter = 'C';
+        }
+        else if (fGradePercentage >= 70) {
+            sGradeLetter = 'C-';
+        }
+        else if (fGradePercentage >= 67) {
+            sGradeLetter = 'D+';
+        }
+        else if (fGradePercentage >= 64) {
+            sGradeLetter = 'D';
+        }
+        else if (fGradePercentage >= 60) {
+            sGradeLetter = 'D-';
+        }
+        else {
+            sGradeLetter = 'E';
+        }
 
-    //calculate grade based on inputs
-    fGradePercentage = fAssignments + fGroupProject + fQuizzes + fExams + fIntex;
-    if (fGradePercentage >= 94) {
-        sGradeLetter = 'A';
+        //display calculated products on page
+        //$('#calculatedLetterGrade').html(sGradeLetter);
+        //$('#calculatedPercentGrade').html(fGradePercentage + "%");
+        alert('Grade: ' + sGradeLetter + '\n' + 'Numeric Grade Percentage: ' + fGradePercentage)
     }
-    else if (fGradePercentage >= 90) {
-        sGradeLetter = 'A-';
-    }
-    else if (fGradePercentage >= 87) {
-        sGradeLetter = 'B+';
-    }
-    else if (fGradePercentage >= 84) {
-        sGradeLetter = 'B';
-    }
-    else if (fGradePercentage >= 80) {
-        sGradeLetter = 'B-';
-    }
-    else if (fGradePercentage >= 77) {
-        sGradeLetter = 'C+';
-    }
-    else if (fGradePercentage >= 74) {
-        sGradeLetter = 'C';
-    }
-    else if (fGradePercentage >= 70) {
-        sGradeLetter = 'C-';
-    }
-    else if (fGradePercentage >= 67) {
-        sGradeLetter = 'D+';
-    }
-    else if (fGradePercentage >= 64) {
-        sGradeLetter = 'D';
-    }
-    else if (fGradePercentage >= 60) {
-        sGradeLetter = 'D-';
-    }
-    else {
-        sGradeLetter = 'E';
-    }
-
-    //display calculated products on page
-    $('#calculatedLetterGrade').html(sGradeLetter);
-    $('#calculatedPercentGrade').html(fGradePercentage + "%");
 });
