@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>@ViewData["Title"] - FirstASPNetApp</title>
+    <!--<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />-->
+    <!--icon-->
+    <link rel="icon" type="images/jpeg" href="~/img/DS_ico.jpeg" />
+    <!--stylesheet-->
+    <link href="~/css/myStyles.css" rel="stylesheet" />
+</head>
+<body>
+    <!--Header with preferred name-->
+    <header>
+        <nav>
+            <div>
+
+
+                <ul class="navLink">
+                    <li class="navItem">
+                        <a class="navA" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="navItem">
+                        <a class="navA" asp-area="" asp-controller="Home" asp-action="GradeCalculator">Grade Calculator</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br />
+
+    <div class="container">
+        <h1>@ViewData["Title"]</h1>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!--space for readability at the bottom of the page-->
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!--footer-->
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - David Schraedel
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <!--<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->
+    <!--JavaScript for grade calculation-->
+    <script src="~/js/script.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+    <br /><br />
+</body>
+</html>

@@ -1,0 +1,82 @@
+﻿
+body {
+    /*background-image: linear-gradient(#a6c7f4, rgba(187, 113, 95, 0.88));*/
+    background-color: #d1dbe9;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height:100%;
+    
+}
+
+body {
+    height:100%;
+}
+
+li {
+    list-style-type: none;
+    
+}
+
+input {
+    border-radius: 50px;
+    border-color: #a6c7f4;
+    text-align: center;
+    width: 70px;
+    background-color: #a6c7f4;
+    padding:5px;
+}
+
+.gradeResults {
+    text-align: center;
+    margin: inherit;
+    
+}
+
+img {
+    border-radius: 80px;
+    padding: 5px;
+    margin: inherit;
+}
+
+input[type=button] {
+    background-image: radial-gradient(circle at center, #d1dbe9, #d49c8f);
+    border: none;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+input[type=button]:hover {
+    background-image: radial-gradient(circle at center, rgba(187, 113, 95, 0.88), #a6c7f4);
+}
+
+.navLink {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #333; */
+}
+
+.navItem {
+    display: inline;
+    float: right;
+}
+
+.navA {
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+.navA:hover {
+    background-image: linear-gradient(#007185ec, #fcfcfc00);
+    text-shadow: 0px 0px 10px #ffffff80;
+    box-shadow: 0px 0px 50px 2px rgba(28, 45, 57, 0.115);
+    /* background: radial-gradient(at center, #83d7e1d0,  #ffe7d700); */
+    /* box-shadow: inset 0px 0px 15px 7px #d3f9fd29; */
+}
