@@ -10,19 +10,19 @@
     <!--grade calculator form-->
     <form asp-action="GradeCalculator" method="post" id="form">
         <label for="assignments">Assignments: </label>
-        <input type="number" step="0.01" max="50" value=0.0 id="Assignments" asp-for="Assignments" /><label class="" for="assignments"> % of 50%</label>
+        <input type="number" step="0.01" value=0.0 id="Assignments" asp-for="Assignments" /><label class="" for="assignments"> % of 50%</label>
         <br /><br />
         <label for="groupProject">Group Project:  </label>
-        <input type="number" step="0.01" max="10" value=0.0 id="GroupProject" asp-for="GroupProject" /><label for="assignments"> % of 10%</label>
+        <input type="number" step="0.01" value=0.0 id="GroupProject" asp-for="GroupProject" /><label for="assignments"> % of 10%</label>
         <br /><br />
         <label for="quizzes">Quizzes:  </label>
-        <input type="number" step="0.01" max="10" value=0.0 id="Quizzes" asp-for="Quizzes" /><label for="assignments"> % of 10%</label>
+        <input type="number" step="0.01" value=0.0 id="Quizzes" asp-for="Quizzes" /><label for="assignments"> % of 10%</label>
         <br /><br />
         <label for="exams">Exams:  </label>
-        <input type="number" step="0.01" max="20" value=0.0 id="Exams" asp-for="Exams" /><label for="assignments"> % of 20%</label>
+        <input type="number" step="0.01" value=0.0 id="Exams" asp-for="Exams" /><label for="assignments"> % of 20%</label>
         <br /><br />
         <label for="intex">INTEX:  </label>
-        <input type="number" step="0.01"  value=0.0 id="Intex" asp-for="Intex" /><label for="assignments"> % of 10%</label>
+        <input type="number" step="0.01" value=0.0 id="Intex" asp-for="Intex" /><label for="assignments"> % of 10%</label>
         <br /><br />
         <input type="submit" id="submitButton" value="Calculate Grade" />
         <div asp-validation-summary="All"></div>
@@ -30,11 +30,6 @@
     <br />
 
     <!--grade calculation output-->
-    <h3>Final Grade:</h3>
-    <div class="gradeResults">
-        <h4 id="calculatedLetterGrade"></h4>
-        <h5 id="calculatedPercentGrade"></h5>
-    </div>
 
     <br /><br />
 
