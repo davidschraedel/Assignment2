@@ -12,18 +12,18 @@ namespace FirstASPNetApp.Models
 
         [Required]
         [Range(minimum: MIN, maximum: 10.0)]
-        public double assignments { get; set; }
+        public double Assignments { get; set; }
         
         [Range(minimum: MIN, maximum: 10.0)]
-        public double groupProject { get; set; }
+        public double GroupProject { get; set; }
         
         [Range(minimum: MIN, maximum: 10.0)]
-        public double quizzes { get; set; }
+        public double Quizzes { get; set; }
         
         [Range(minimum: MIN, maximum: 20.0)]
-        public double exams { get; set; }
+        public double Exams { get; set; }
         
         [Range(minimum: MIN, maximum: 10.0)]
-        public double intex { get; set; }
+        public double Intex { get; set; }
     }
 }

@@ -2,17 +2,17 @@
 //JavaScript for grade calculation
 
 
-$("#form").submit(function handleForm(event) { event.preventDefault(); })
+//$("#form").submit(function handleForm(event) { event.preventDefault(); })
 
 $('#submitButton').click(function () {
     //define variables
     var fGradePercentage = 0.0;
     var sGradeLetter = '';
-    var fAssignments = parseFloat($('#assignments').val());
-    var fGroupProject = parseFloat($('#groupProject').val());
-    var fQuizzes = parseFloat($('#quizzes').val());
-    var fExams = parseFloat($('#exams').val());
-    var fIntex = parseFloat($('#intex').val());
+    var fAssignments = parseFloat($('#Assignments').val());
+    var fGroupProject = parseFloat($('#GroupProject').val());
+    var fQuizzes = parseFloat($('#Quizzes').val());
+    var fExams = parseFloat($('#Exams').val());
+    var fIntex = parseFloat($('#Intex').val());
 
     //calculate grade based on inputs
     fGradePercentage = fAssignments + fGroupProject + fQuizzes + fExams + fIntex;
